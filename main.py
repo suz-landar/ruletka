@@ -1,16 +1,9 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+tasks = 16
+first_student = {1, 2, 3, 12, 13, 14, 5, 1}
+second_student = {3, 4, 5, 14, 1, 7, 2, 9}
+result = first_student | second_student
+total = []
+for i in range(0, tasks):
+    if i not in result:
+        total.append(i)
+print(len(total))
